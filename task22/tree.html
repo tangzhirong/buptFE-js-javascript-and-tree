@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>二叉树遍历可视化</title>
+    <script src="tree.js"></script>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            text-align: center;
+            box-sizing: border-box;
+        }
+        h1{
+            margin-top: 20px;
+        }
+        span{
+            margin-top: 20px;
+            display: block;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            max-width: 800px;
+            max-height: 600px;
+            width: calc(50% - 20px);
+            height: calc(100% - 30px);
+            border: 1px solid #000;
+            margin: 5px;
+            padding: 15px 10px;
+            background-color: #FFFFFF;
+        }
+        #root{
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>二叉树遍历可视化</h1>
+    <span>
+        <button onclick="traverse('pre')">前序遍历</button>
+        <button onclick="traverse('in')">中序遍历</button>
+        <button onclick="traverse('post')">后序遍历</button>
+        <label for="time">遍历间隔</label>
+        <input id="time" type="number" value="1000">
+    </span>
+
+    <div id="root">
+        <div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
